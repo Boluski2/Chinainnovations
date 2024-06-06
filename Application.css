@@ -1,0 +1,142 @@
+body{
+    width: 100%;
+}
+
+.navbar{
+    max-width: 100%;
+    height: 600px;
+    background-image:linear-gradient(0deg, rgba(34, 32, 32, 0.8), rgba(34, 32, 32, 0.7)), url("Image/Content.jpeg");
+    background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+ position: relative;
+ padding: 25px 40px;
+ color: #fff;
+}
+
+.COURSE_OVERVIEW{
+  display: flex;
+  background: #FAFAFB;
+ justify-content: space-around;
+ padding: 50px;
+ gap: 20px;
+}
+
+.OVERVIEW{
+    margin: 30px 45px;
+}
+
+
+
+.OVERVIEW h3{
+   font-size: 1.5rem;
+}
+
+
+
+.OVERVIEW p{
+    font-size: 1rem;
+    color: #787878;
+}
+
+
+
+.OVERVIEW_1 li{
+    color: #787878;
+    text-decoration: dashed;
+    padding-bottom: 10px;
+    list-style-type: disc;
+}
+
+
+.OVERVIEW_img{
+    height: 83vh;
+    width: 50%;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 20px;
+}
+
+.OVERVIEW_1 h4{
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+/*  */
+
+.course_about{
+    padding: 2rem 4rem;
+    display: flex;
+    background: #FAFAFB;
+    justify-content: space-evenly;
+}
+
+.about_img{
+    display: flex;
+    gap: 2rem;
+    max-width: 1200px;
+}
+
+.about_img img{
+    height: 83vh;
+    width: 50%;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 20px;
+}
+
+.Over_view{
+    width: 100%;
+    margin-top: 2.5rem;
+}
+
+.Over_view h3{
+    font-size: 1.5rem;
+}
+
+.Over_view p{
+    font-size: 1rem;
+    color: #787878;
+}
+
+.about_text1 h4{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+ul li{
+    font-size: 1rem;
+    color: #787878;
+    margin: 1rem 2rem;
+}
+/****** END OF ABOUT OVERVIEW *********/
+
+
+
+
+
+
+@media screen and (max-width: 768px){
+    .COURSE_OVERVIEW{
+        display: grid;
+      }
+ 
+      .course_about{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+      .OVERVIEW_img{
+        width: 100%;
+        height: 50vh;
+    }
+
+    .about_img{
+        display: grid;
+    }
+    
+    .about_img img{
+        width: 100%;
+        height: 50vh;
+    }
+
+}

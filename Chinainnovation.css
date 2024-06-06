@@ -1,0 +1,820 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+a{
+  text-decoration: none;
+}
+
+.navbar{
+  height: 100vh;
+  background-image:linear-gradient(0deg, rgba(34, 32, 32, 0.8), rgba(34, 32, 32, 0.7)), url("Image/Hero-Banner.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+ position: relative;
+ padding: 25px 40px;
+ color: #fff;
+}
+
+.navbar-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3rem .6rem  3rem;
+  width: 100%;
+  max-width: 1200px;
+  /* padding-bottom: 1rem; */
+  border-bottom: 1px solid #fff;
+}
+
+.navbar-brand a{
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.navbar-links{
+ display: flex;
+ gap: 2.5rem;
+}
+
+
+.navbar-links a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.apply-button{
+  border: 1px solid #FFD540;
+    background: transparent;
+    color: #FFD540;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: .7rem 1.5rem;
+    border-radius: 10px;
+    transition: 0.5s ease-in-out;
+}
+
+.apply-button:hover{
+  background: #FFD540;
+  color: #000;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.open-icon,
+.close-icon {
+    display: none;
+}
+
+.open-icon.show {
+  display: inline;
+}
+
+.close-icon.show {
+  display: none;
+}
+
+.hero {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+.hero-content{
+  max-width: 800px;
+}
+
+.hero-content h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  line-height: 1.1;
+}
+
+.hero-content  p{
+  /* padding-bottom: 3rem; */
+  margin-bottom: 3rem;
+}
+
+
+   /****** END OF HEADER SECTION *********/
+
+   .course-overview{
+    display: flex;
+    padding: 3rem 2rem;
+    justify-content: center;
+    align-items: center;
+   }
+
+   .container{
+    display: flex;
+    max-width: 1200px;
+    align-items: center;
+    gap: 3rem;
+   }
+
+   .image-container{
+    flex: 1;
+   }
+
+   .course-image{
+    height: 450px;
+    width: 500px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    object-fit: cover;
+   }
+
+   .text-container{
+    height: 450px;
+    flex: 2;
+   }
+
+   .about-heading{
+    font-size: 1.5rem;
+    color: #8e44ad;
+    margin: 0;
+   }
+
+   .course-title{
+    font-size: 2rem;
+    margin: 10px 0;
+   }
+
+   .course-description{
+    font-size: 1rem;
+    line-height: 1.6;
+   }
+  
+
+/****** END OF ABOUT SECTION *********/
+
+.objective{
+    height: fit-content;
+    padding: 2rem 5rem; 
+     background: #000000;
+     color: #fff;
+ }
+ 
+ .object{
+   margin: 5rem auto;
+   max-width: 1200px;
+ }
+ 
+ 
+  .top-row {
+     display: flex;
+     justify-content: space-around;
+     margin: 4rem auto;
+     flex: 1;
+   } 
+   
+   .bottom-row {
+     display: flex; 
+     flex: 1;
+      gap: 2rem; 
+      justify-content: space-evenly;
+     margin: 4rem auto;
+   } 
+ 
+    .sub_object_1 p{
+     font-size: .8rem;
+     padding-top: 20px;
+     color: #A1A1AA;
+   } 
+  
+   .sub_object_2{
+     width: 261px;
+     height: 30vh;
+     padding:  1rem;
+     font-weight: bolder;
+     font-size: 1.8rem;
+     background: #25252A;
+   } 
+ 
+   .sub_object_2 p{
+    font-size: .9rem; 
+      padding-top: 20px; 
+      color: #A1A1AA;
+   } 
+ 
+   .sub_object{
+     width: 261px;
+     height: 30vh;
+     padding: 1rem 2rem;
+     background: #25252A;
+     font-size: 1rem;
+     font-weight: 600;
+   } 
+ 
+   .sub_object p{
+    font-size: .8rem;
+     padding-top: 1rem;
+     color: #A1A1AA;
+   } 
+
+  /****** END OF OBJECTIVE ******/
+
+
+   .COURSE{
+    padding: 2rem 5rem; 
+    background: #FAFAFB;
+    color: black;
+    text-align: center;
+    height: fit-content;
+  } 
+
+  .COURSE h1{
+    padding: 1.5rem;
+  } 
+
+   .COURSE p{
+    font-size: .9rem;
+    padding-bottom: .8rem;
+    color: #787878;
+  } 
+
+  .Sub_course{
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: center;
+    gap: .6rem;
+    margin-bottom: 3rem;
+  } 
+
+  .course_left{
+    width: 100%;
+    border: 1px solid #E7D2FF;
+    color: #E7D2FF;
+    background: white;
+    border-radius: .5rem;
+  } 
+
+  .course_left, span{
+    font-size: 4rem;
+    padding-top: 15px;
+  }
+
+  .course_left p{
+    line-height: 1.8;
+  } 
+
+
+   .butt{
+    margin-top: 5rem;
+  } 
+
+/****** END OF COURSE  ******/
+
+.Study{
+    margin: 1.8rem;
+    max-width: 100%;
+  }
+
+  .Study h1{
+    margin: 1.5rem;
+    text-align: center;
+  }
+
+   .text-overlay{
+    display: flex;
+    max-width: 200vh;
+    margin: 0 auto;
+    height: 70vh;
+    border: 1px solid;
+    position: relative;
+    border: none;
+  } 
+  
+   .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7); 
+    padding: 1rem;
+    text-align: left;
+} 
+
+ .icon1{
+  display: flex;
+  padding: 10px;
+  margin: 20px 20px 50px 50px;
+  text-align: left;
+  cursor: pointer;
+} 
+
+.icons{
+  position: absolute;
+  bottom: -55px;
+  left: -45px;
+  right: 0;
+} 
+
+
+.study_tour_left, .study_tour_right {
+    width: 55%;
+    padding: .5rem;
+    box-sizing: border-box;
+    position: relative;
+    color: #ffffff; 
+    background-size: cover; 
+    background-position: center; 
+    border-radius: 10px; 
+} 
+
+
+
+  .study_tour_left{
+    background-image: url("Image/Study-tour.jpeg");
+  } 
+  
+  .study_tour_right{
+    background-image: url("Image/Study-tour-1.jpeg");
+    margin-left: 20px;
+  } 
+
+  .study_tour_left, h3, p {
+    margin: 0;
+} 
+
+h3 {
+    margin-bottom: .8rem;
+} 
+
+ p {
+    margin-bottom: 1rem;
+    font-size: .8rem;
+    line-height: 1.5;
+} 
+
+/****** END OF STUDY TOUR ******/
+.container_4 {
+  /* max-width: 1200px; */
+  background: #F6F0FD;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  padding: 2rem 5rem; 
+
+}
+
+.container_4 h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.container_4 p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.resources-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin: 20px 0;
+}
+
+.resource-item {
+  /* background-color: #fff; */
+  border-radius: 15px;
+  overflow: hidden;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+  text-align: left;
+}
+
+.resource-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.resource-info {
+  padding: 20px;
+}
+
+.resource-info p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.read-more-link {
+  font-size: 16px;
+  color: #ffc107;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.3s;
+}
+
+.read-more-link:hover {
+  border-bottom: 1px solid #ffc107;
+}
+
+  
+  /****** END OF RESOURCES ******/
+
+  .partners-section {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: #fff;
+    border-top: 1px solid #eee;
+}
+
+.partners-section h2 {
+    color: blue;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.partners-logos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.partners-logos img {
+    max-width: 150px;
+    height: auto;
+}
+
+ 
+/****** END OF PARTNERS ******/
+
+.faqs{
+    text-align: center;
+    padding: 2rem 5rem; 
+    max-width: 100%;
+}
+
+.faqs h2{
+    margin-bottom: 20px;
+}
+
+.faqs p{
+    font-size: .9rem;
+}
+
+
+.faqs_container{
+    display: inline-block;
+    margin: 0 auto;
+    background: #F8FAFC; 
+    text-align: left;
+    border: 1px solid #F8FAFC;
+    border-radius: 1rem;
+}
+
+.faq{
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    cursor: pointer;
+   border-bottom-style: inset;
+   position: relative;
+   padding-right: 3rem;
+}
+
+.faq h4{
+    font-size: .7rem;
+    line-height: 2.1;
+    padding: 0 20px 0 20px;
+    font-size: 13px;
+}
+
+.faq p{
+    margin-top: 0.8rem;
+    margin-left: 20px;
+    display: none;
+    font-size: 12px;
+}
+
+.faq.open p{
+  display: block;
+}
+
+.faq_icon{
+    align-items: right;
+    font-size: .9rem;
+    position: absolute;
+    right: 15px;
+    top: 20px;
+}
+
+/****** END OF FAQ ******/
+
+
+
+.APPLY{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    background: #F6F0FD;
+    padding: 3rem;
+}
+
+.APPLY_LEFT h2{
+    line-height: 1.5;
+}
+
+
+.APPLY h3{
+    line-height: 1.9;
+}
+
+.botton{
+  background: #FFD540;
+  color: #000;
+}
+/****** END OF APPLY ******/
+
+footer{
+  background: #FAFAFB;
+  padding: 2rem 3rem;
+}
+
+.sub_footer{
+  display: flex;
+  justify-content: space-evenly;
+  /* max-width: 1200px; */
+}
+.container_1{
+  padding-right: 13rem;
+}
+
+
+.container_1 a{
+  text-decoration: none;
+  font-size: 1.7rem;
+  color:  #18181B;
+}
+
+.container_1  p{
+  font-size: 1rem;
+  color: #18181B;
+}
+
+.footer_social{
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  /* margin-bottom: 1rem; */
+}
+
+.footer_social li a{
+  font-size: 1.5rem;
+}
+
+.container_2{
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+  /* flex: 1; */
+}
+
+.footer_item h4{
+  color:  #18181B;
+  font-size: 1.6rem;
+}
+
+.privacy a{
+  list-style: none;
+  text-decoration: none;
+  font-size: 1rem;
+  color:  #18181B;
+  margin-bottom: 2rem;
+}
+
+ .privacy {
+  list-style: none;
+  text-decoration: none;
+  font-size: 1rem;
+  margin-top: .6rem;
+}
+
+.privacy li{
+  margin-bottom: 2rem;
+}
+
+
+
+/****** END OF FOOTER ******/
+  
+
+
+/* Start Media Query */
+@media (max-width: 768px  /*799px*/){
+
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #FFD540;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    z-index: 999;
+}
+
+.navbar-brand{
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+}
+
+.hero-content h1{
+  font-size: 1.5rem;
+  line-height: 1.4;
+}
+
+.menu-icon {
+  display: block;
+}
+
+.navbar-links.show {
+  display: flex;
+}
+
+.open-icon.show {
+  display: inline;
+  font-size: 2rem;
+}
+
+.close-icon.show {
+  display: inline;
+  font-size: 2rem;
+}
+
+.Apply{
+  display: none;
+}
+
+  
+ /****** END OF HEADER *******/
+ .container {
+  flex-direction: column-reverse;
+}
+
+.course-image {
+  width: 100%;
+}
+
+.image-container,
+.text-container {
+    max-width: 100%;
+}
+
+.course-description{
+  font-size: .9rem;
+}
+  
+ /****** END OF ABOUT *******/
+ .top-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+}
+  
+  .bottom-row {
+    display: grid;
+      grid-template-columns: 1fr;
+      width: 100%;
+}
+.sub_object_1{
+  place-items: center;
+  text-align: center;
+  align-items: center;
+  /* width: 100%; */
+}
+
+.sub_object_1 h1{
+   font-size: 1.5rem;
+   text-align: left;
+   /* width: 130%; */
+}
+
+.sub_object_1 p {
+  font-size: 1rem;
+  text-align: left;
+  line-height: 2;
+  border: 1px solid;
+}
+
+/****** END OF OBJECTIVE *******/
+    .Sub_course {
+      grid-template-columns: 1fr;
+  }
+
+  .COURSE p {
+    font-size: 0.8rem;
+}
+
+/****** END OF COURSE CONTENT *******/
+    
+      .text-overlay{
+        display: flex;
+        flex-direction: column;
+        height: 120vh;
+        place-items: center;
+        border: none;
+        gap: 5px;
+      }
+      
+      .text-overlay, .study_tour_right {
+        margin: 10px;
+      }
+      
+      .study_tour_left, .study_tour_right {
+        width: 100%;
+        height: 70vh;
+      }
+      
+/****** END OF STUDY TOUR *********/
+
+      .resources-grid {
+        grid-template-columns: 1fr;
+    }
+
+    
+
+/****** END OF COURSE RESOURCES *******/
+.APPLY{
+  padding: 1rem;
+}
+.APPLY_LEFT h2 {
+  font-size: .8rem;
+  padding-bottom: .9rem;
+}
+
+
+/****** END OF  APPLY *******/
+
+footer{
+  padding: .2rem;
+}
+.container_1{
+  padding-right: 0;
+}
+
+.container_1 p{
+  font-size: .8rem;
+}
+
+.sub_footer{
+  border: 1px solid;
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+.sub_footer{
+  display: grid;
+  width: 100%;
+}
+
+.footer_social{
+  margin-bottom: 1rem;
+}
+
+.footer_item h4{
+  font-size: 1.3rem;
+}
+
+.privacy a{
+  font-size: .9rem;
+}
+
+.container_2 {
+  gap: .7rem;
+}
+/****** END OF COURSE FOOTER *******/
+
+}
+
+
+
+
